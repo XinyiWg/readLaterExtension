@@ -1,0 +1,72 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read Later Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+        padding: 0;
+        background-color: #e8ebd3db;
+        color: #333;
+        width: 400px;
+        height: 400px;
+      }
+
+      input[type="text"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #131010e2;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #d8dc82;
+        color: rgba(25, 22, 22, 0.637);
+        padding: 10px 20px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #d8dc82;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 8px;
+        margin-bottom: 6px;
+        background-color: #eee;
+        border-radius: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="pageName" placeholder="Custom name for page" />
+    <button id="savePage">Save Current Page</button>
+    <button id="clearAll">Clear All</button>
+    <ul id="pageList">
+      <!-- Saved pages will be listed here -->
+    </ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
